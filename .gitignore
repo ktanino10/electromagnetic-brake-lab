@@ -1,0 +1,13 @@
+node_modules/
+__pycache__/
+*.pyc
+*.log
+*.blend1
+.DS_Store
+model-v2/blender/frames/
+*.zip
+!print-prep/p1s-brake-print-prep.zip
+model-v2/results/viewer-*.png
+model-v2/results/viewer-accessibility.txt
+model-v2/results/*browser-validation.json
+model-v2/results/viewer-validation.json
