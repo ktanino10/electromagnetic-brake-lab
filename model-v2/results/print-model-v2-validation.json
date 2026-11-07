@@ -1,0 +1,1075 @@
+{
+ "title": "Screw-assembled armature and leaf-spring brake teaching model (v2)",
+ "status": "digital model only; not printed, not sliced, not physically tested; hardware is a specification, not purchased",
+ "params": {
+  "plate_r": 60.0,
+  "plate_t": 3.0,
+  "plate_chamfer": 0.5,
+  "floor_z": 6.0,
+  "pole_z": 16.0,
+  "inner_ri": 31.0,
+  "inner_ro": 35.0,
+  "outer_ri": 44.0,
+  "outer_ro": 50.5,
+  "shoulder_r": 7.0,
+  "cone_r": 10.0,
+  "axle_r": 4.0,
+  "axle_top": 33.8,
+  "axle_chamfer": 0.5,
+  "coil_ri": 35.5,
+  "coil_ro": 43.5,
+  "coil_h": 9.4,
+  "gap": 1.5,
+  "bore_r": 4.35,
+  "hub_r": 9.0,
+  "hub_h": 6.0,
+  "knob_r": 7.0,
+  "knob_h": 10.0,
+  "knob_grooves": 12,
+  "knob_groove_r": 0.8,
+  "knob_groove_c": 7.2,
+  "seat_t": 5.5,
+  "arm_ri": 30.0,
+  "arm_ro": 50.0,
+  "pad_u0": 7.3,
+  "pad_u1": 16.7,
+  "pad_s0": -1.5,
+  "pad_s1": 10.1,
+  "spr_a": 12.0,
+  "spr_w": 7.0,
+  "spr_t": 0.8,
+  "spr_s_hub": 5.5,
+  "spr_r_arm": 39.5,
+  "hole_r": 1.7,
+  "pocket_af": 5.9,
+  "pocket_depth": 3.2,
+  "bridge_layer": 0.2,
+  "slot_w": 5.9,
+  "slot_z0": 12.0,
+  "slot_h": 2.6,
+  "blind_z": 9.5,
+  "cap_r": 6.5,
+  "cap_t": 2.0,
+  "cap_chamfer": 0.4,
+  "window_hw": 5.0,
+  "window_z0": 6.5,
+  "window_z1": 9.0,
+  "window_alpha_deg": 40.0,
+  "window_angles": [
+   60.0,
+   180.0,
+   300.0
+  ],
+  "mark_w": 1.2,
+  "mark_d": 0.6,
+  "strap_angles": [
+   0.0,
+   120.0,
+   240.0
+  ]
+ },
+ "derived": {
+  "Z0": 17.5,
+  "ZT": 23.0,
+  "S_A": 37.63309713536743,
+  "L_free": 24.033097135367427,
+  "section_deg": [
+   24.623564786163612,
+   192.31416865043894
+  ]
+ },
+ "hardware_bom": [
+  {
+   "item": "六角穴付きボルト M3x6 (ISO 4762)",
+   "qty": 6,
+   "use": "板ばねの固定"
+  },
+  {
+   "item": "六角穴付きボルト M3x25 (ISO 4762)",
+   "qty": 1,
+   "use": "抜け止めキャップの固定"
+  },
+  {
+   "item": "六角ナット M3 (ISO 4032, 二面幅5.5)",
+   "qty": 7,
+   "use": "部品の六角穴へ入れる"
+  },
+  {
+   "item": "平座金 M3 (ISO 7089, 外径7, 厚0.5)",
+   "qty": 7,
+   "use": "ねじ頭の下"
+  },
+  {
+   "item": "六角棒レンチ 2.5mm",
+   "qty": 1,
+   "use": "締付け工具"
+  }
+ ],
+ "thread_report": [
+  {
+   "screw": "screw_hub0",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_arm0",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_hub1",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_arm1",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_hub2",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_arm2",
+   "length_mm": 6.0,
+   "tip_z_range": [
+    18.06,
+    18.54
+   ],
+   "nut_z": [
+    18.3,
+    20.7
+   ],
+   "engagement_mm": [
+    2.16,
+    2.4
+   ],
+   "pitches_min": 4.32,
+   "tip_margin_to_floor_mm": 0.56
+  },
+  {
+   "screw": "screw_axle",
+   "length_mm": 25.0,
+   "tip_z_range": [
+    10.88,
+    11.72
+   ],
+   "nut_z": [
+    12.2,
+    14.6
+   ],
+   "engagement_mm": [
+    2.4,
+    2.4
+   ],
+   "pitches_min": 4.8,
+   "tip_margin_to_floor_mm": 1.38
+  }
+ ],
+ "pocket_walls_mm": {
+  "hub0": 1.294,
+  "hub1": 1.294,
+  "hub2": 1.294,
+  "armature0": 6.179,
+  "armature1": 6.179,
+  "armature2": 6.179,
+  "slot_closed_end": 3.594
+ },
+ "checks": [
+  {
+   "name": "valid_base",
+   "ok": true,
+   "volume_mm3": 78346.395
+  },
+  {
+   "name": "valid_coil",
+   "ok": true,
+   "volume_mm3": 18321.266
+  },
+  {
+   "name": "valid_cap",
+   "ok": true,
+   "volume_mm3": 244.106
+  },
+  {
+   "name": "valid_hub",
+   "ok": true,
+   "volume_mm3": 3331.665
+  },
+  {
+   "name": "valid_armature",
+   "ok": true,
+   "volume_mm3": 27278.688
+  },
+  {
+   "name": "valid_spring0",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "valid_spring1",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "valid_spring2",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "valid_screw_hub0",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_hub0",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_hub0",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_arm0",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_arm0",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_arm0",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_hub1",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_hub1",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_hub1",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_arm1",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_arm1",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_arm1",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_hub2",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_hub2",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_hub2",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_arm2",
+   "ok": true,
+   "volume_mm3": 103.881
+  },
+  {
+   "name": "valid_washer_arm2",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_arm2",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_screw_axle",
+   "ok": true,
+   "volume_mm3": 238.184
+  },
+  {
+   "name": "valid_washer_axle",
+   "ok": true,
+   "volume_mm3": 15.221
+  },
+  {
+   "name": "valid_nut_axle",
+   "ok": true,
+   "volume_mm3": 45.556
+  },
+  {
+   "name": "valid_pressed_spring",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "valid_pressed_spring",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "valid_pressed_spring",
+   "ok": true,
+   "volume_mm3": 196.206
+  },
+  {
+   "name": "no_overlap_all_pairs_off",
+   "ok": true,
+   "pairs": 399,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_all_pairs_pressed",
+   "ok": true,
+   "pairs": 399,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_off_rot17",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_pressed_rot17",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_off_rot45",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_pressed_rot45",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_off_rot90",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_pressed_rot90",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_off_rot200",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "no_overlap_rotor_vs_fixed_pressed_rot200",
+   "ok": true,
+   "pairs": 138,
+   "worst_common_mm3": 0.0
+  },
+  {
+   "name": "off_armature_gap_to_poles",
+   "ok": true,
+   "gap_mm": 1.5
+  },
+  {
+   "name": "pressed_armature_touches_poles",
+   "ok": true,
+   "dist_mm": 0.0
+  },
+  {
+   "name": "pressed_armature_clears_coil",
+   "ok": true,
+   "clearance_mm": 0.6
+  },
+  {
+   "name": "pressed_nut_arm0_clears_coil_nominal",
+   "ok": true,
+   "clearance_mm": 1.4
+  },
+  {
+   "name": "pressed_screw_arm0_clears_coil_nominal",
+   "ok": true,
+   "clearance_mm": 1.4
+  },
+  {
+   "name": "free_span_clears_base_off",
+   "ok": true,
+   "min_mm": 7.0
+  },
+  {
+   "name": "free_span_clears_base_pressed",
+   "ok": true,
+   "min_mm": 5.5
+  },
+  {
+   "name": "pressed_free_span_mid_clears_hub_armature_hardware",
+   "ok": true,
+   "min_mm": 0.234
+  },
+  {
+   "name": "pressed_span_tip_zone_tangent_no_penetration",
+   "ok": true,
+   "common_mm3": 0.0,
+   "analytic_min_gap_mm": 0.0,
+   "note": "guided beam: zero slope at the clamp, so the span meets the armature tangentially there by design"
+  },
+  {
+   "name": "bore_radial_clearance",
+   "ok": true,
+   "clearance_mm": 0.35
+  },
+  {
+   "name": "hub_sits_on_shoulder",
+   "ok": true
+  },
+  {
+   "name": "cap_to_hub_axial_play",
+   "ok": true,
+   "play_mm": 0.3
+  },
+  {
+   "name": "cap_retains_hub_overlap_radial",
+   "ok": true,
+   "overlap_mm": 2.15
+  },
+  {
+   "name": "spring_strain_below_1pct",
+   "ok": true,
+   "strain": 0.00623
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_hub0",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_hub0",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "hex_key_access_screw_hub0",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_arm0",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_arm0",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "pressed_tip_clears_coil_worst_screw_arm0",
+   "ok": true,
+   "clearance_mm": 1.16
+  },
+  {
+   "name": "hex_key_access_screw_arm0",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_hub1",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_hub1",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "hex_key_access_screw_hub1",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_arm1",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_arm1",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "pressed_tip_clears_coil_worst_screw_arm1",
+   "ok": true,
+   "clearance_mm": 1.16
+  },
+  {
+   "name": "hex_key_access_screw_arm1",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_hub2",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_hub2",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "hex_key_access_screw_hub2",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_arm2",
+   "ok": true,
+   "engagement_min_mm": 2.16
+  },
+  {
+   "name": "tip_inside_part_screw_arm2",
+   "ok": true,
+   "margin_mm": 0.56
+  },
+  {
+   "name": "pressed_tip_clears_coil_worst_screw_arm2",
+   "ok": true,
+   "clearance_mm": 1.16
+  },
+  {
+   "name": "hex_key_access_screw_arm2",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "thread_engagement_ge_4_pitches_screw_axle",
+   "ok": true,
+   "engagement_min_mm": 2.4
+  },
+  {
+   "name": "tip_inside_part_screw_axle",
+   "ok": true,
+   "margin_mm": 1.38
+  },
+  {
+   "name": "hex_key_access_screw_axle",
+   "ok": true,
+   "blocked_mm3": 0.0
+  },
+  {
+   "name": "nut_pocket_anti_rotation",
+   "ok": true,
+   "pocket_af": 5.9,
+   "slot_w": 5.9,
+   "nut_s": 5.5,
+   "nut_e_min": 6.01
+  },
+  {
+   "name": "bridge_rect_fits_inside_hex",
+   "ok": true,
+   "hole_r": 1.7,
+   "half_flat": 1.7032
+  },
+  {
+   "name": "nut_can_drop_into_pocket",
+   "ok": true
+  },
+  {
+   "name": "pocket_wall_ge_1.2_hub0",
+   "ok": true,
+   "wall_mm": 1.294
+  },
+  {
+   "name": "pocket_wall_ge_1.2_hub1",
+   "ok": true,
+   "wall_mm": 1.294
+  },
+  {
+   "name": "pocket_wall_ge_1.2_hub2",
+   "ok": true,
+   "wall_mm": 1.294
+  },
+  {
+   "name": "pocket_wall_ge_1.2_armature0",
+   "ok": true,
+   "wall_mm": 6.179
+  },
+  {
+   "name": "pocket_wall_ge_1.2_armature1",
+   "ok": true,
+   "wall_mm": 6.179
+  },
+  {
+   "name": "pocket_wall_ge_1.2_armature2",
+   "ok": true,
+   "wall_mm": 6.179
+  },
+  {
+   "name": "slot_wall_ge_1.2_base",
+   "ok": true,
+   "wall_mm": 3.594
+  },
+  {
+   "name": "roof_above_nut_ge_2mm",
+   "ok": true,
+   "pad_roof_mm": 2.3,
+   "slot_roof_mm": 2.9
+  },
+  {
+   "name": "pad_wall_analytic",
+   "ok": true,
+   "walls_mm": [
+    1.294,
+    1.294,
+    1.65,
+    4.05
+   ]
+  },
+  {
+   "name": "armature_pockets_over_coil_groove_only",
+   "ok": true,
+   "pocket_r_range": [
+    36.179,
+    42.834
+   ],
+   "groove": [
+    35.0,
+    44.0
+   ]
+  },
+  {
+   "name": "print_01_base_grey_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 11195.7
+  },
+  {
+   "name": "print_01_base_grey_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 46.03
+  },
+  {
+   "name": "print_01_base_grey_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_01_base_grey_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_01_base_grey_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 78336.05,
+   "cad_mm3": 78346.39
+  },
+  {
+   "name": "print_02_coil_ring_orange_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 1985.3
+  },
+  {
+   "name": "print_02_coil_ring_orange_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 0.0
+  },
+  {
+   "name": "print_02_coil_ring_orange_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_02_coil_ring_orange_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_02_coil_ring_orange_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 18320.06,
+   "cad_mm3": 18321.27
+  },
+  {
+   "name": "print_03_hub_violet_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 406.0
+  },
+  {
+   "name": "print_03_hub_violet_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 63.21
+  },
+  {
+   "name": "print_03_hub_violet_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_03_hub_violet_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_03_hub_violet_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 3331.56,
+   "cad_mm3": 3331.67
+  },
+  {
+   "name": "print_04_armature_blue_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 4935.6
+  },
+  {
+   "name": "print_04_armature_blue_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 63.21
+  },
+  {
+   "name": "print_04_armature_blue_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_04_armature_blue_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_04_armature_blue_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 27277.65,
+   "cad_mm3": 27278.69
+  },
+  {
+   "name": "print_05_leaf_spring_green_print4_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 245.3
+  },
+  {
+   "name": "print_05_leaf_spring_green_print4_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 0.0
+  },
+  {
+   "name": "print_05_leaf_spring_green_print4_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_05_leaf_spring_green_print4_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_05_leaf_spring_green_print4_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 196.2,
+   "cad_mm3": 196.21
+  },
+  {
+   "name": "print_06_retaining_cap_grey_on_bed",
+   "ok": true,
+   "bed_contact_mm2": 123.6
+  },
+  {
+   "name": "print_06_retaining_cap_grey_no_unsupported_overhang",
+   "ok": true,
+   "area_mm2": 0.0,
+   "bridged_mm2": 0.0
+  },
+  {
+   "name": "print_06_retaining_cap_grey_fits_180_bed",
+   "ok": true
+  },
+  {
+   "name": "stl_06_retaining_cap_grey_closed_manifold",
+   "ok": true,
+   "components": 1
+  },
+  {
+   "name": "stl_06_retaining_cap_grey_volume_matches_cad",
+   "ok": true,
+   "stl_mm3": 244.05,
+   "cad_mm3": 244.11
+  },
+  {
+   "name": "max_bridge_span_mm",
+   "ok": true,
+   "span_mm": 5.9
+  },
+  {
+   "name": "fcstd_reopen_shapes_match",
+   "ok": true,
+   "objects": 42
+  },
+  {
+   "name": "step_readback_solids",
+   "ok": true,
+   "solids": 29,
+   "expected": 29
+  }
+ ],
+ "n_checks": 126,
+ "n_failed": 0,
+ "mechanics": {
+  "model": "three fixed-guided leaf springs, Euler-Bernoulli; no FEA, no print anisotropy, clamp compliance ignored",
+  "spring": {
+   "L_free_mm": 24.033,
+   "w_mm": 7.0,
+   "t_mm": 0.8,
+   "I_mm4": 0.29867
+  },
+  "deflection_mm": 1.5,
+  "max_surface_strain": 0.00623,
+  "materials": {
+   "PLA": {
+    "E_MPa": [
+     2300.0,
+     3500.0
+    ],
+    "k_total_N_per_mm": [
+     1.782,
+     2.711
+    ],
+    "press_force_linear_N": [
+     2.67,
+     4.07
+    ],
+    "press_force_with_stretch_N": [
+     5.43,
+     8.26
+    ],
+    "max_stress_MPa": [
+     14.3,
+     21.8
+    ]
+   },
+   "PETG": {
+    "E_MPa": [
+     1700.0,
+     2100.0
+    ],
+    "k_total_N_per_mm": [
+     1.317,
+     1.627
+    ],
+    "press_force_linear_N": [
+     1.98,
+     2.44
+    ],
+    "press_force_with_stretch_N": [
+     4.01,
+     4.95
+    ],
+    "max_stress_MPa": [
+     10.6,
+     13.1
+    ]
+   }
+  },
+  "note": "Order-of-magnitude estimate. Real printed springs may differ by about a factor of 2."
+ },
+ "files": {
+  "01_base_grey": {
+   "path": "stl/print/01_base_grey.stl",
+   "bytes": 478184,
+   "sha256": "03f1b156b6b2607f10d9abc7915e887c3878eb429b986e078fcf99b5106f1d6d",
+   "facets": 9562,
+   "bbox_mm": [
+    120.0,
+    120.0,
+    33.8
+   ],
+   "volume_cm3": 78.346,
+   "bed_contact_mm2": 11195.7,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 46.03
+  },
+  "02_coil_ring_orange": {
+   "path": "stl/print/02_coil_ring_orange.stl",
+   "bytes": 628384,
+   "sha256": "7e221c61e2cc77181590c25cefdca8fa8d0a1742eaac0e475b9a8edcc6e84e59",
+   "facets": 12566,
+   "bbox_mm": [
+    87.0,
+    87.0,
+    9.4
+   ],
+   "volume_cm3": 18.321,
+   "bed_contact_mm2": 1985.3,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 0.0
+  },
+  "03_hub_violet": {
+   "path": "stl/print/03_hub_violet.stl",
+   "bytes": 454884,
+   "sha256": "43434fa1b1d23e3637868ddfef18c214e3aa7142da67ff34ad550d162f254b15",
+   "facets": 9096,
+   "bbox_mm": [
+    33.8,
+    34.73,
+    16.0
+   ],
+   "volume_cm3": 3.332,
+   "bed_contact_mm2": 406.0,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 63.21
+  },
+  "04_armature_blue": {
+   "path": "stl/print/04_armature_blue.stl",
+   "bytes": 198784,
+   "sha256": "f376ca1d58c22b4fe32e9ed508c42c57b43917c602b82f8f0d0acd2e70e82874",
+   "facets": 3974,
+   "bbox_mm": [
+    100.0,
+    100.0,
+    5.5
+   ],
+   "volume_cm3": 27.279,
+   "bed_contact_mm2": 4935.6,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 63.21
+  },
+  "05_leaf_spring_green_print4": {
+   "path": "stl/print/05_leaf_spring_green_print4.stl",
+   "bytes": 108684,
+   "sha256": "d82db615a03d324d5b021aa00ff438aff1c46a39e158ad9d221c605f52763003",
+   "facets": 2172,
+   "bbox_mm": [
+    39.13,
+    7.0,
+    0.8
+   ],
+   "volume_cm3": 0.196,
+   "bed_contact_mm2": 245.3,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 0.0
+  },
+  "06_retaining_cap_grey": {
+   "path": "stl/print/06_retaining_cap_grey.stl",
+   "bytes": 99184,
+   "sha256": "9063d8fb3edad48d14bdb6a3b96b2c08278ce0bc5c1e9520244f06e81140305a",
+   "facets": 1982,
+   "bbox_mm": [
+    13.0,
+    13.0,
+    2.0
+   ],
+   "volume_cm3": 0.244,
+   "bed_contact_mm2": 123.6,
+   "overhang_gt45_mm2": 0.0,
+   "bridged_ceiling_mm2": 0.0
+  }
+ },
+ "cad": {
+  "fcstd": {
+   "path": "cad/brake_teaching_model_v2_screws.FCStd",
+   "bytes": 222822,
+   "sha256": "4617c59a04f8201d9ae8a2b7bf97f6ecba3d9f56a33db8b91ffb1dc3465de9eb"
+  },
+  "step": {
+   "path": "cad/brake_teaching_model_v2_assembly_off.step",
+   "bytes": 861499,
+   "sha256": "6b466a41c26de8707f67a4a05bdd4ea451deb7ea756fa105c151299154733a55"
+  }
+ }
+}

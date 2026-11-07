@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "native_blender_decompressed_scan": true,
+  "native_blender_geometry_and_animation_unchanged": true,
+  "freecad_archive_members_scanned": true,
+  "print_zip_members_scanned": true,
+  "no_personal_paths_or_secret_markers": true,
+  "third_party_fonts_bundled": false,
+  "third_party_reference_drawings_bundled": false,
+  "source_data_modified": false,
+  "scope": "Designated own model/media assets only; model and video hashes preserved. Not a security audit or manufacturing release."
+}

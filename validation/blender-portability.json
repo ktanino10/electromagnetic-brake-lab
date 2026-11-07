@@ -1,0 +1,14 @@
+{
+  "scope": "Copied Blender native scene paths only; source scene not modified",
+  "source_sha256": "eae16b5da44cf6a3af643f08856fd05b835b65d29432d7d60f134abcf7b3f184",
+  "repository_sha256": "b019d6260da530efd61a96358ab65fec3ccd7b0cdb33c61cdbf808f024b79c52",
+  "geometry_and_animation_sha256": "a35b79d8cc31003a216e1082ac86b05911d7ffe363033bedfaf6c7d346f68f9c",
+  "geometry_and_animation_unchanged": true,
+  "changed_fields": [
+    "external_font_replaced_with_builtin_placeholder",
+    "file_browser_directory",
+    "render_output"
+  ],
+  "fonts_bundled": false,
+  "font_note": "Assign a locally available Japanese font for text rendering."
+}

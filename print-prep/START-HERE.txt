@@ -49,7 +49,7 @@ Bambu Studioでの準備
    ブリムやスカートを追加すると外形が広がります。ベッド端、他部品、
    左手前の除外領域から外れる場合は再配置してからスライスしてください。
 8. スライス後、ノズル経路・部品数・エラー／警告を画面で確認し、
-   設定入りプロジェクトを別名保存します。このZIPの3MFとは別物です。
+   設定入りプロジェクトを別名保存します。このフォルダーの3MFとは別物です。
    この手順は準備の案内で、印刷開始の代行は行いません。
 
 最初は小さい部品で確認
@@ -89,9 +89,16 @@ https://github.com/bambulab/BambuStudio/blob/master/resources/profiles/BBL/machi
 0.4mmノズル、左手前18×28mm除外領域、既定0.20mm Standardを確認。
 実際のBambu Studioのプリセットと機器に合わせてください。
 
-リポジトリ内の入口（このファイルからの相対パス）
-------------------------------------------------
+組立説明・CAD・動画（このファイルからの相対パス）
+--------------------------------------------------
+../model-v2/GUIDE.txt
+../model-v2/brake-viewer-v2.html
+../model-v2/watch-assembly.html
+../model-v2/brake-assembly-v2.mp4
+../model-v2/cad/
+../videos/watch.html（背景説明を含めた動画3本）
 ../README.md（別PCでGitHubから取得する手順）
-../model-v2/stl/print/（元STL6種類）
-p1s-brake-print-prep.zip（単独で取得できる印刷準備一式）
-ZIP内のstl/は上記STLと同一です。
+STLは ../model-v2/stl/print/ に1組だけ保存しています。
+p1s-brake-print-prep.zip は単独取得用の印刷準備一式です。
+ZIP内の stl/ は上記と同じ6種です。ZIP内の組立ガイドへの案内は
+以前の提供物を指すため、動画・CAD・組立説明には上記repo相対パスを使用してください。

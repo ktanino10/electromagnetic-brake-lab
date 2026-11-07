@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>ブレーキ模型の組立 | 88秒</title>
+<style>
+body{margin:0;background:#172a3a;color:#edf3f7;font:15px/1.6 "Hiragino Sans",sans-serif}main{max-width:1280px;margin:auto;padding:20px}h1{font-size:23px;margin:0 0 16px}video{display:block;width:100%;background:#000}a{color:#8ed1ff}p{font-size:13px}button{padding:10px 20px;font:inherit}
+</style>
+<main>
+<h1>ねじで組むブレーキ模型 — 組立手順</h1>
+<video id="video" controls autoplay muted playsinline src="./brake-assembly-v2.mp4"></video>
+<button id="play" hidden>音量0で再生</button>
+<p>CADの名目寸法に基づく動きのCGです。物理シミュレーションではありません。未印刷・未購入・実物未検証。</p>
+<a href="./brake-viewer-v2.html">自由に回せる3Dビューアへ</a>
+</main>
+<script>
+const v=document.getElementById('video'),b=document.getElementById('play');
+v.muted=true;v.volume=0;
+const play=()=>v.play().then(()=>{b.hidden=true;}).catch(e=>{b.hidden=false;b.title=e.message;});
+b.addEventListener('click',play);
+v.addEventListener('error',()=>{b.hidden=false;b.disabled=true;b.textContent='動画を開けません。ZIPのフォルダ構成とMP4を確認してください。';});
+play();
+</script>
+</html>

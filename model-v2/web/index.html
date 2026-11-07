@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ねじで組むブレーキ模型 | v2</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:light;--ink:#172a3a;--paper:#edf3f7;--line:#c5d4df;--blue:#216ac4;--teal:#087f71;--violet:#7955bb;--orange:#c86d1e}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.6 "Hiragino Sans","Yu Gothic",sans-serif}button,input,select{font:inherit}button,select{border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:8px 12px}button{cursor:pointer}button:hover{border-color:var(--blue)}button:disabled{opacity:.5;cursor:default}button[aria-pressed=true],button.active{background:var(--ink);color:#fff;border-color:var(--ink)}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}input[type=range]{width:100%;accent-color:var(--blue)}input[type=checkbox]{accent-color:var(--blue);width:18px;height:18px}h1,h2,p{margin:0}h1{font:700 clamp(20px,2.1vw,30px)/1.4 "Hiragino Maru Gothic ProN","Yu Gothic",sans-serif}h2{font-size:17px}small,.hint{color:#4d6273;font-size:12px}.mono{font-family:Menlo,monospace;font-size:12px}a{color:#195b9e}header{padding:18px 26px;background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{font:11px/1.6 Menlo,monospace;letter-spacing:1.6px;color:var(--teal)}.stamp{border:1px solid var(--line);padding:7px 12px;border-radius:6px;white-space:nowrap;font-size:12px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;min-height:640px}#bench{position:relative;min-width:0;background:#e4edf3;overflow:hidden}#scene{display:block;width:100%;height:100%;min-height:580px;touch-action:none}.scene-note{position:absolute;top:18px;left:22px;right:22px;pointer-events:none;display:flex;justify-content:space-between;gap:20px}.scene-note span{background:#ffffffeb;border:1px solid var(--line);padding:5px 10px;border-radius:5px;font-size:12px}#loading{position:absolute;inset:40% 15% auto;text-align:center;background:#fff;padding:22px;border-radius:10px}#loading.error{border:2px solid #a13224;color:#8f2019}.view-buttons{position:absolute;left:22px;bottom:22px;display:flex;gap:6px;flex-wrap:wrap}aside{background:#fff;border-left:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:18px}.modes{display:flex;gap:6px}.modes button{flex:1}.controls{display:flex;flex-direction:column;gap:13px}.control-title{display:flex;justify-content:space-between;font-size:14px}.checks{display:grid;gap:9px}.checks label{display:flex;align-items:center;gap:8px}.press-box{padding:13px;background:#edf7f4;border-left:3px solid var(--teal);border-radius:5px}.press-box button{width:100%;margin-bottom:6px}.part-info{border-top:1px solid var(--line);padding-top:14px}.part-info p{margin-top:5px;font-size:13px}#timeline-panel{border-top:1px solid var(--line);background:#fff;padding:20px 26px}.timeline-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}.timeline-head h2{flex:1}.stage-row{display:flex;gap:6px;overflow-x:auto;padding:5px 3px 12px}.stage-row button{flex-shrink:0;font-size:12px;padding:8px 10px}.stage-row .active{background:var(--blue);border-color:var(--blue);color:white}.parts-rack{display:flex;flex-wrap:wrap;gap:8px;padding:16px 26px;border-top:1px solid var(--line);background:#f7fafc}.parts-rack button{display:flex;align-items:center;gap:7px}.swatch{display:inline-block;width:11px;height:11px;border-radius:50%;border:1px solid #0002}.info{padding:24px 26px;max-width:1280px;margin:auto}.info details{border-top:1px solid var(--line);padding:14px 0}.info summary{cursor:pointer;font-weight:600}.info p{margin:8px 0}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}.gallery img{width:100%;border-radius:6px}.gallery a{text-decoration:none;font-size:13px}video{display:block;max-width:100%;width:920px;margin:15px auto;background:#172a3a}footer{padding:16px 26px;font-size:12px;background:var(--ink);color:#edf3f7}.downloads{display:flex;gap:14px;flex-wrap:wrap}#detail{min-height:72px}button.primary{background:var(--blue);color:white;border-color:var(--blue)}[hidden]{display:none!important}
+@media(max-width:850px){header{padding:14px 16px}.stamp{display:none}.layout{grid-template-columns:1fr}#bench{height:52vh;min-height:340px}#scene{min-height:0}aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;padding:16px;gap:12px}.modes,.part-info{grid-column:1/-1}.scene-note{left:12px;right:12px}.scene-note span:last-child{display:none}#timeline-panel{padding:16px}.parts-rack{padding:12px 16px}.info{padding:16px}.timeline-head{flex-wrap:wrap}.timeline-head h2{min-width:60%;font-size:15px}.view-buttons{left:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div><div class="eyebrow">BRAKE ASSEMBLY / TEACHING MODEL v2</div><h1>ねじで組むブレーキ模型</h1></div><div class="stamp">CADの名目寸法<br>未印刷・実物未検証</div></header>
+<main>
+<div class="layout">
+<section id="bench" aria-label="3D模型の表示">
+<canvas id="scene" aria-label="ブレーキ模型。ドラッグで回転、スクロールで拡大。視点ボタンでも操作できます。" tabindex="0"></canvas>
+<div class="scene-note"><span id="scene-label">完成形を観察</span><span>ドラッグ：回転 / スクロール：拡大</span></div>
+<div id="loading" role="status">3D模型を読み込んでいます…</div>
+<div class="view-buttons" aria-label="視点"><button data-view="iso">斜め</button><button data-view="top">上から</button><button data-view="bottom">裏から</button><button data-view="side">横から</button><button id="reset">全体に戻す</button></div>
+</section>
+<aside>
+<div class="modes"><button id="explore" aria-pressed="true">観察する</button><button id="assembly" aria-pressed="false">組み立てる</button></div>
+<div class="controls">
+<label><span class="control-title"><span>分解する</span><output id="explode-value">0%</output></span><input id="explode" type="range" min="0" max="100" step="1" value="0" aria-label="分解の割合"></label>
+<div class="checks"><label><input id="section" type="checkbox" aria-describedby="section-note">断面を見る</label><p id="section-note" class="hint" hidden>組立中は手順10で自動的に断面になります。自由に切り替えるには「観察する」へ。</p><label><input id="xray" type="checkbox">プラスチックを透かす</label><label><input id="hardware" type="checkbox" checked>ねじ・ナットを表示</label></div>
+</div>
+<div class="press-box"><button id="press" aria-pressed="false">円盤を押す</button><p class="hint">指で押す動きのCGです。磁力・摩擦・ばねの力は計算していません。</p></div>
+<div class="part-info"><h2 id="part-title">模型全体</h2><p id="detail">青い円盤と紫のハブを、緑の板ばね3枚でつなぎます。下の部品ボタンで、ねじ穴を単独表示できます。</p><p class="mono" id="part-size">台座 Ø120 mm / M3 × 7本</p></div>
+</aside>
+</div>
+<div class="parts-rack" aria-label="部品を単独で見る">
+<button data-part="all" aria-pressed="true">全体</button>
+<button data-part="base" aria-pressed="false"><i class="swatch" style="background:#8796a5"></i>台座</button>
+<button data-part="coil" aria-pressed="false"><i class="swatch" style="background:#e99c40"></i>コイル役</button>
+<button data-part="hub" aria-pressed="false"><i class="swatch" style="background:#9672ca"></i>ハブ</button>
+<button data-part="armature" aria-pressed="false"><i class="swatch" style="background:#3d9bdf"></i>円盤</button>
+<button data-part="spring0" aria-pressed="false"><i class="swatch" style="background:#43b78b"></i>板ばね</button>
+<button data-part="cap" aria-pressed="false"><i class="swatch" style="background:#c9d1da"></i>キャップ</button>
+</div>
+<section id="timeline-panel" aria-label="組立の手順">
+<div class="timeline-head"><button id="play" class="primary">組立を再生</button><h2 id="step-title">手順を選んで組み立てを見る</h2><output id="time" class="mono">0:00 / 1:28</output></div>
+<input id="timeline" type="range" min="0" max="88" step="0.05" value="0" aria-label="組立の時刻">
+<div id="steps" class="stage-row"></div>
+<p id="caption" aria-live="polite">ねじを入れる方向や順番を、途中で止めて確認できます。</p>
+</section>
+<div class="info">
+<details><summary>ねじ穴・ナット穴の拡大図（5枚）</summary><div class="gallery">
+<a href="../blender/stills-holes/H1_parts_top.png"><img loading="lazy" src="../blender/stills-holes/H1_parts_top.png" alt="印刷する6種の部品とねじ穴">部品と通し穴</a>
+<a href="../blender/stills-holes/H2_underside_nut_pockets.png"><img loading="lazy" src="../blender/stills-holes/H2_underside_nut_pockets.png" alt="裏側の六角ナット穴">裏側の六角穴</a>
+<a href="../blender/stills-holes/H3_section_spring_screw.png"><img loading="lazy" src="../blender/stills-holes/H3_section_spring_screw.png" alt="板ばね固定部の断面">M3×6の固定部</a>
+<a href="../blender/stills-holes/H4_section_center_post.png"><img loading="lazy" src="../blender/stills-holes/H4_section_center_post.png" alt="中心の柱とM3×25の断面">軸ボルトの断面</a>
+<a href="../blender/stills-holes/H5_exploded_axes.png"><img loading="lazy" src="../blender/stills-holes/H5_exploded_axes.png" alt="ねじの通り道を示す分解図">分解図</a>
+</div></details>
+<details id="video-panel"><summary>88秒の組立動画（初期音量0）</summary><video id="video" controls muted playsinline preload="none" src="../brake-assembly-v2.mp4"></video></details>
+<details><summary>模型データ・寸法と制約</summary>
+<p>必要な金属部品の仕様：六角穴付きボルトM3×6を6本、M3×25を1本、M3ナット7個、平座金7枚。ねじ山は見た目用で、ナットの内ねじは省略しています。</p>
+<p>これは電磁石として動作しない手動模型の設計案です。印刷寸法、耐久性、戻り方、締付け、実際の組立作業は未確認。造形・製作の承認や実機設計の成立を示すものではありません。</p>
+<div class="downloads"><a href="../GUIDE.txt">組立ガイド</a><a href="../../print-prep/START-HERE.txt">P1S印刷準備</a><a href="../../print-prep/p1s-brake-print-prep.zip">印刷用ZIP</a><a href="../../videos/watch.html">動画3本</a><a href="../../README.md">README</a><a href="../cad/brake_teaching_model_v2_screws.FCStd">FreeCAD</a><a href="../cad/brake_teaching_model_v2_assembly_off.step">STEP</a><a href="../blender/brake-teaching-model-v2.blend">Blender</a></div>
+<p class="hint">3D部分は外部通信なしで動きます。動画・静止画・CADへのリンクは、ZIPを展開したフォルダ構成のまま開いてください。</p>
+</details>
+</div>
+</main>
+<footer>組立手順の見える化であり、物理シミュレーションではありません。購入・印刷・通電・実機試験は行っていません。</footer>
+<!-- BUNDLE -->
+</body>
+</html>

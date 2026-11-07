@@ -1,0 +1,430 @@
+{
+ "units": "mm",
+ "frame": "Z up, axis Z, base bottom z=0",
+ "Z0": 17.5,
+ "ZT": 23.0,
+ "delta": 1.5,
+ "hub_top": 33.5,
+ "axle_top": 33.8,
+ "strap_angles": [
+  0.0,
+  120.0,
+  240.0
+ ],
+ "spring": {
+  "a": 12.0,
+  "s_hub": 5.5,
+  "s_arm": 37.63309713536743,
+  "s_root": 10.1,
+  "s_tip": 34.13309713536743,
+  "t": 0.8,
+  "w": 7.0
+ },
+ "section_deg": [
+  24.623564786163612,
+  192.31416865043894
+ ],
+ "slot_deg": 192.31416865043894,
+ "slot_z": [
+  12.0,
+  14.6
+ ],
+ "pitch": 0.5,
+ "render": {
+  "base": {
+   "group": "fixed",
+   "kind": "part",
+   "off": "base.stl",
+   "section": "base_section.stl"
+  },
+  "coil": {
+   "group": "fixed",
+   "kind": "part",
+   "off": "coil.stl",
+   "section": "coil_section.stl"
+  },
+  "cap": {
+   "group": "fixed",
+   "kind": "part",
+   "off": "cap.stl",
+   "section": "cap_section.stl"
+  },
+  "hub": {
+   "group": "hub",
+   "kind": "part",
+   "off": "hub.stl",
+   "section": "hub_section.stl"
+  },
+  "armature": {
+   "group": "armature",
+   "kind": "part",
+   "off": "armature.stl",
+   "section": "armature_section.stl",
+   "pressed": "armature_pressed.stl",
+   "pressed_section": "armature_pressed_section.stl"
+  },
+  "spring0": {
+   "group": "spring",
+   "kind": "part",
+   "off": "spring0.stl",
+   "section": "spring0_section.stl",
+   "pressed": "spring0_pressed.stl",
+   "pressed_section": "spring0_pressed_section.stl"
+  },
+  "spring1": {
+   "group": "spring",
+   "kind": "part",
+   "off": "spring1.stl",
+   "section": "spring1_section.stl",
+   "pressed": "spring1_pressed.stl",
+   "pressed_section": "spring1_pressed_section.stl"
+  },
+  "spring2": {
+   "group": "spring",
+   "kind": "part",
+   "off": "spring2.stl",
+   "section": "spring2_section.stl",
+   "pressed": "spring2_pressed.stl",
+   "pressed_section": "spring2_pressed_section.stl"
+  },
+  "screw_hub0": {
+   "group": "hub",
+   "kind": "screw_M3x6",
+   "off": "screw_hub0.stl",
+   "section": "screw_hub0_section.stl",
+   "data": {
+    "xy": [
+     12.0,
+     5.5
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_hub0"
+   }
+  },
+  "washer_hub0": {
+   "group": "hub",
+   "kind": "washer_M3",
+   "off": "washer_hub0.stl",
+   "section": "washer_hub0_section.stl",
+   "data": {
+    "xy": [
+     12.0,
+     5.5
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_hub0": {
+   "group": "hub",
+   "kind": "nut_M3",
+   "off": "nut_hub0.stl",
+   "section": "nut_hub0_section.stl",
+   "data": {
+    "xy": [
+     12.0,
+     5.5
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 0.0
+   }
+  },
+  "screw_arm0": {
+   "group": "armature",
+   "kind": "screw_M3x6",
+   "off": "screw_arm0.stl",
+   "section": null,
+   "pressed": "screw_arm0_pressed.stl",
+   "pressed_section": null,
+   "data": {
+    "xy": [
+     12.0,
+     37.63309713536743
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_arm0"
+   }
+  },
+  "washer_arm0": {
+   "group": "armature",
+   "kind": "washer_M3",
+   "off": "washer_arm0.stl",
+   "section": null,
+   "pressed": "washer_arm0_pressed.stl",
+   "pressed_section": null,
+   "data": {
+    "xy": [
+     12.0,
+     37.63309713536743
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_arm0": {
+   "group": "armature",
+   "kind": "nut_M3",
+   "off": "nut_arm0.stl",
+   "section": null,
+   "pressed": "nut_arm0_pressed.stl",
+   "pressed_section": null,
+   "data": {
+    "xy": [
+     12.0,
+     37.63309713536743
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 0.0
+   }
+  },
+  "screw_hub1": {
+   "group": "hub",
+   "kind": "screw_M3x6",
+   "off": "screw_hub1.stl",
+   "section": null,
+   "data": {
+    "xy": [
+     -10.763139720814412,
+     7.642304845413265
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_hub1"
+   }
+  },
+  "washer_hub1": {
+   "group": "hub",
+   "kind": "washer_M3",
+   "off": "washer_hub1.stl",
+   "section": null,
+   "data": {
+    "xy": [
+     -10.763139720814412,
+     7.642304845413265
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_hub1": {
+   "group": "hub",
+   "kind": "nut_M3",
+   "off": "nut_hub1.stl",
+   "section": null,
+   "data": {
+    "xy": [
+     -10.763139720814412,
+     7.642304845413265
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 120.0
+   }
+  },
+  "screw_arm1": {
+   "group": "armature",
+   "kind": "screw_M3x6",
+   "off": "screw_arm1.stl",
+   "section": "screw_arm1_section.stl",
+   "pressed": "screw_arm1_pressed.stl",
+   "pressed_section": "screw_arm1_pressed_section.stl",
+   "data": {
+    "xy": [
+     -38.59121814231558,
+     -8.424243722270443
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_arm1"
+   }
+  },
+  "washer_arm1": {
+   "group": "armature",
+   "kind": "washer_M3",
+   "off": "washer_arm1.stl",
+   "section": "washer_arm1_section.stl",
+   "pressed": "washer_arm1_pressed.stl",
+   "pressed_section": "washer_arm1_pressed_section.stl",
+   "data": {
+    "xy": [
+     -38.59121814231558,
+     -8.424243722270443
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_arm1": {
+   "group": "armature",
+   "kind": "nut_M3",
+   "off": "nut_arm1.stl",
+   "section": "nut_arm1_section.stl",
+   "pressed": "nut_arm1_pressed.stl",
+   "pressed_section": "nut_arm1_pressed_section.stl",
+   "data": {
+    "xy": [
+     -38.59121814231558,
+     -8.424243722270443
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 120.0
+   }
+  },
+  "screw_hub2": {
+   "group": "hub",
+   "kind": "screw_M3x6",
+   "off": "screw_hub2.stl",
+   "section": "screw_hub2_section.stl",
+   "data": {
+    "xy": [
+     -1.2368602791855938,
+     -13.142304845413264
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_hub2"
+   }
+  },
+  "washer_hub2": {
+   "group": "hub",
+   "kind": "washer_M3",
+   "off": "washer_hub2.stl",
+   "section": "washer_hub2_section.stl",
+   "data": {
+    "xy": [
+     -1.2368602791855938,
+     -13.142304845413264
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_hub2": {
+   "group": "hub",
+   "kind": "nut_M3",
+   "off": "nut_hub2.stl",
+   "section": "nut_hub2_section.stl",
+   "data": {
+    "xy": [
+     -1.2368602791855938,
+     -13.142304845413264
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 240.0
+   }
+  },
+  "screw_arm2": {
+   "group": "armature",
+   "kind": "screw_M3x6",
+   "off": "screw_arm2.stl",
+   "section": "screw_arm2_section.stl",
+   "pressed": "screw_arm2_pressed.stl",
+   "pressed_section": "screw_arm2_pressed_section.stl",
+   "data": {
+    "xy": [
+     26.59121814231556,
+     -29.208853413096993
+    ],
+    "z_bearing": 24.3,
+    "length": 6.0,
+    "mate": "nut_arm2"
+   }
+  },
+  "washer_arm2": {
+   "group": "armature",
+   "kind": "washer_M3",
+   "off": "washer_arm2.stl",
+   "section": "washer_arm2_section.stl",
+   "pressed": "washer_arm2_pressed.stl",
+   "pressed_section": "washer_arm2_pressed_section.stl",
+   "data": {
+    "xy": [
+     26.59121814231556,
+     -29.208853413096993
+    ],
+    "z0": 23.8
+   }
+  },
+  "nut_arm2": {
+   "group": "armature",
+   "kind": "nut_M3",
+   "off": "nut_arm2.stl",
+   "section": "nut_arm2_section.stl",
+   "pressed": "nut_arm2_pressed.stl",
+   "pressed_section": "nut_arm2_pressed_section.stl",
+   "data": {
+    "xy": [
+     26.59121814231556,
+     -29.208853413096993
+    ],
+    "z0": 18.3,
+    "z0_loose": 17.5,
+    "corner_deg": 240.0
+   }
+  },
+  "screw_axle": {
+   "group": "fixed",
+   "kind": "screw_M3x25",
+   "off": "screw_axle.stl",
+   "section": "screw_axle_section.stl",
+   "data": {
+    "xy": [
+     0,
+     0
+    ],
+    "z_bearing": 36.3,
+    "length": 25.0,
+    "mate": "nut_axle"
+   }
+  },
+  "washer_axle": {
+   "group": "fixed",
+   "kind": "washer_M3",
+   "off": "washer_axle.stl",
+   "section": "washer_axle_section.stl",
+   "data": {
+    "xy": [
+     0,
+     0
+    ],
+    "z0": 35.8
+   }
+  },
+  "nut_axle": {
+   "group": "fixed",
+   "kind": "nut_M3",
+   "off": "nut_axle.stl",
+   "section": "nut_axle_section.stl",
+   "data": {
+    "xy": [
+     0,
+     0
+    ],
+    "z0": 12.2,
+    "z0_loose": 12.0,
+    "corner_deg": 192.31416865043894,
+    "slot_deg": 192.31416865043894
+   }
+  }
+ },
+ "shcs": {
+  "dk": 5.5,
+  "k": 3.0,
+  "s": 2.5,
+  "t": 1.6,
+  "d": 3.0,
+  "pitch": 0.5
+ },
+ "nut": {
+  "s": 5.5,
+  "e_min": 6.01,
+  "m": 2.4,
+  "d": 3.0
+ },
+ "washer": {
+  "d1": 3.2,
+  "d2": 7.0,
+  "h": 0.5
+ }
+}

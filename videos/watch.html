@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>電磁ブレーキ学習模型の動画</title>
+<style>
+body{margin:0;background:#edf3f7;color:#172a3a;font:16px/1.7 sans-serif}
+main{max-width:1000px;margin:auto;padding:24px}h1{font-size:26px}h2{font-size:20px}
+video{display:block;width:100%;background:#172a3a}a{color:#195b9e}
+section{margin:28px 0}.error{color:#8f2019;font-weight:bold}
+</style>
+</head>
+<body><main>
+<h1>電磁ブレーキ学習模型の動画</h1>
+<p>3本とも初期ミュート・音量0です。再生ボタンで開始してください。磁力のない手動模型のCGであり、物理シミュレーションや実機の作動確認ではありません。</p>
+<p><a href="../model-v2/brake-viewer-v2.html">オフライン3Dビューア</a> / <a href="../print-prep/START-HERE.txt">P1S印刷準備</a> / <a href="../README.md">README</a></p>
+<section><h2>現行v2のねじ組立 — 88秒</h2>
+<video controls muted playsinline preload="metadata" src="../model-v2/brake-assembly-v2.mp4" aria-label="現行v2のねじ組立動画"></video>
+<p>現行v2の部品・ねじの組立順。720p、音声トラックなし。</p></section>
+<section><h2>しくみの背景説明 — 92秒</h2>
+<video controls muted playsinline preload="metadata" src="./pico-brake-mechanism-explainer.mp4" aria-label="しくみの背景説明動画"></video>
+<p>以前の背景説明です。印刷形状・締結仕様は現行v2のCAD／STLとガイドを参照してください。</p></section>
+<section><h2>4方向からの観察 — 40秒</h2>
+<video controls muted playsinline preload="metadata" src="./pico-brake-four-angles.mp4" aria-label="4方向からの観察動画"></video>
+<p>背景CGを多方向から観察します。現行v2の製作仕様ではありません。</p></section>
+</main>
+<script>
+for(const video of document.querySelectorAll('video')){
+  video.muted=true;video.volume=0;
+  video.addEventListener('error',()=>{
+    const message=document.createElement('p');
+    message.className='error';message.setAttribute('role','alert');
+    message.textContent='動画を開けません。リポジトリ全体をダウンロードして展開し、MP4とフォルダー構成を確認してください。';
+    video.after(message);
+  },{once:true});
+}
+</script>
+</body>
+</html>

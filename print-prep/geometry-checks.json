@@ -1,0 +1,246 @@
+{
+  "scope": "Geometry-only plate placement, not slicer/physical validation",
+  "printer": "Bambu Lab P1S",
+  "nozzle_mm_assumed_not_confirmed": 0.4,
+  "slicer_installed_or_run": false,
+  "printed": false,
+  "printer_connected": false,
+  "plates": [
+    {
+      "file": "01-body-PLA-candidate.3mf",
+      "instances": [
+        {
+          "source": "../model-v2/stl/print/01_base_grey.stl",
+          "translation_mm": [
+            80,
+            80,
+            0
+          ],
+          "bounds_mm": [
+            [
+              20.0,
+              20.0,
+              0.0
+            ],
+            [
+              140.0,
+              140.0,
+              33.79999923706055
+            ]
+          ],
+          "triangles": 9562,
+          "source_sha256": "03f1b156b6b2607f10d9abc7915e887c3878eb429b986e078fcf99b5106f1d6d"
+        },
+        {
+          "source": "../model-v2/stl/print/04_armature_blue.stl",
+          "translation_mm": [
+            195,
+            80,
+            0
+          ],
+          "bounds_mm": [
+            [
+              145.0,
+              30.001239776611328,
+              0.0
+            ],
+            [
+              245.0,
+              129.99876022338867,
+              5.5
+            ]
+          ],
+          "triangles": 3974,
+          "source_sha256": "f376ca1d58c22b4fe32e9ed508c42c57b43917c602b82f8f0d0acd2e70e82874"
+        },
+        {
+          "source": "../model-v2/stl/print/02_coil_ring_orange.stl",
+          "translation_mm": [
+            70,
+            200,
+            0
+          ],
+          "bounds_mm": [
+            [
+              26.5,
+              156.5,
+              0.0
+            ],
+            [
+              113.5,
+              243.5,
+              9.399999618530273
+            ]
+          ],
+          "triangles": 12566,
+          "source_sha256": "7e221c61e2cc77181590c25cefdca8fa8d0a1742eaac0e475b9a8edcc6e84e59"
+        },
+        {
+          "source": "../model-v2/stl/print/03_hub_violet.stl",
+          "translation_mm": [
+            160,
+            200,
+            0
+          ],
+          "bounds_mm": [
+            [
+              142.90314292907715,
+              180.4873752593994,
+              0.0
+            ],
+            [
+              176.70000076293945,
+              215.21262454986572,
+              16.0
+            ]
+          ],
+          "triangles": 9096,
+          "source_sha256": "43434fa1b1d23e3637868ddfef18c214e3aa7142da67ff34ad550d162f254b15"
+        },
+        {
+          "source": "../model-v2/stl/print/06_retaining_cap_grey.stl",
+          "translation_mm": [
+            210,
+            200,
+            0
+          ],
+          "bounds_mm": [
+            [
+              203.5,
+              193.5,
+              0.0
+            ],
+            [
+              216.5,
+              206.5,
+              2.0
+            ]
+          ],
+          "triangles": 1982,
+          "source_sha256": "9063d8fb3edad48d14bdb6a3b96b2c08278ce0bc5c1e9520244f06e81140305a"
+        }
+      ],
+      "source_geometry_exact": true,
+      "minimum_axis_aligned_box_separation_mm": 5,
+      "bed_exclusion_mm": [
+        [
+          0,
+          0
+        ],
+        [
+          18,
+          28
+        ]
+      ],
+      "sliced": false,
+      "sha256": "b75e5f9ed9521fd07432f565ad1c7cfe3b9b5be382f27c6dcabfbe796a3c5027"
+    },
+    {
+      "file": "02-springs-PETG-candidate.3mf",
+      "instances": [
+        {
+          "source": "../model-v2/stl/print/05_leaf_spring_green_print4.stl",
+          "translation_mm": [
+            68,
+            96,
+            0
+          ],
+          "bounds_mm": [
+            [
+              48.43345069885254,
+              92.5,
+              0.0
+            ],
+            [
+              87.56654930114746,
+              99.5,
+              0.800000011920929
+            ]
+          ],
+          "triangles": 2172,
+          "source_sha256": "d82db615a03d324d5b021aa00ff438aff1c46a39e158ad9d221c605f52763003"
+        },
+        {
+          "source": "../model-v2/stl/print/05_leaf_spring_green_print4.stl",
+          "translation_mm": [
+            128,
+            96,
+            0
+          ],
+          "bounds_mm": [
+            [
+              108.43345069885254,
+              92.5,
+              0.0
+            ],
+            [
+              147.56654930114746,
+              99.5,
+              0.800000011920929
+            ]
+          ],
+          "triangles": 2172,
+          "source_sha256": "d82db615a03d324d5b021aa00ff438aff1c46a39e158ad9d221c605f52763003"
+        },
+        {
+          "source": "../model-v2/stl/print/05_leaf_spring_green_print4.stl",
+          "translation_mm": [
+            68,
+            116,
+            0
+          ],
+          "bounds_mm": [
+            [
+              48.43345069885254,
+              112.5,
+              0.0
+            ],
+            [
+              87.56654930114746,
+              119.5,
+              0.800000011920929
+            ]
+          ],
+          "triangles": 2172,
+          "source_sha256": "d82db615a03d324d5b021aa00ff438aff1c46a39e158ad9d221c605f52763003"
+        },
+        {
+          "source": "../model-v2/stl/print/05_leaf_spring_green_print4.stl",
+          "translation_mm": [
+            128,
+            116,
+            0
+          ],
+          "bounds_mm": [
+            [
+              108.43345069885254,
+              112.5,
+              0.0
+            ],
+            [
+              147.56654930114746,
+              119.5,
+              0.800000011920929
+            ]
+          ],
+          "triangles": 2172,
+          "source_sha256": "d82db615a03d324d5b021aa00ff438aff1c46a39e158ad9d221c605f52763003"
+        }
+      ],
+      "source_geometry_exact": true,
+      "minimum_axis_aligned_box_separation_mm": 5,
+      "bed_exclusion_mm": [
+        [
+          0,
+          0
+        ],
+        [
+          18,
+          28
+        ]
+      ],
+      "sliced": false,
+      "sha256": "d1514a1b39f0bb8ce5674323935eb009db88409d799f8e4f87ae6a4e05b1c953"
+    }
+  ]
+}
