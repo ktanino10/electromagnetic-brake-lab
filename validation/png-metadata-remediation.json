@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "baseline_commit": "48835bf978dbd837f652c964eb53aaff7621f1cb",
+  "incident": "The earlier public-content check omitted PNG text chunks. Twelve assembly images contained a local source-file path in Blender render metadata.",
+  "fix": "Removed only tEXt/zTXt/iTXt chunks from repository copies. No source artifacts were modified.",
+  "history_note": "Fix-forward only. The baseline commit remains in public history and its original image metadata is still accessible. No history rewrite was performed.",
+  "regression": {
+    "original_images_detected": 12,
+    "after_images_detected": 0,
+    "all_local_pngs_checked": 22,
+    "text_and_compressed_international_encodings_tested": true,
+    "original_validator_rejected": true,
+    "updated_validator_passed": true
+  },
+  "files": {
+    "model-v2/blender/stills-assembly/t_028.5.png": {
+      "before_sha256": "d998ae3488137cac87d0c8ba9e0f2c141531844b7a09cd7296d5361f7df93f8c",
+      "after_sha256": "e162c6c9f5b1c8b513cae9970590d7dd87ef23fc8a28540d3bd76f9e21cfbb4e",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "eef30ef79a441a30e60f46e5a95239f961c7aec53193a5c75e602e81a5e9d602"
+    },
+    "model-v2/blender/stills-assembly/t_024.9.png": {
+      "before_sha256": "3493846aed676e9c32f1c62f9d3457251a30e32a66da259946c7078c5d751aac",
+      "after_sha256": "d68f1d42badd13e0fead1f017f49ac3239436b4753830a6c5e767fef80dfc8fa",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "90f0760c37562a3343dfbaf2edad31481b95535adb4c22ab29d30637090d3024"
+    },
+    "model-v2/blender/stills-assembly/t_055.5.png": {
+      "before_sha256": "3a6a9d8e30bf2b427892b0f9a7f6f1888e2b72f9e82be17440d69191b08566a4",
+      "after_sha256": "f93219e8a540082f9282d2dda2b0407efef292334acffd832ac2807a6ea8f229",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "b5b860dad5f67386b5bd5325a41a7f8befbdc6426e0b085b7f33fd8fd172fbfe"
+    },
+    "model-v2/blender/stills-assembly/t_016.3.png": {
+      "before_sha256": "7b4d772805d8783bd6a8ff9373f4618874369d46729ca79affe18333b34fc264",
+      "after_sha256": "effe4bbef72ce4a3508364e2e7c9ef7af7efaf159189f02a7275fbe3320a4be8",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "ae1c5ae96a861e5077e10203b0275b63e4e5d7930c4303adc3ea4cafe0c971be"
+    },
+    "model-v2/blender/stills-assembly/t_009.6.png": {
+      "before_sha256": "50d98d57bbc971b31f6bafe43ecd45d2a2e8ed83d079fcfbc240aefcc7cd4ba0",
+      "after_sha256": "926feef8a9863aabd29c971ed87626b317f9c516d60bf5596c9617fe8f6b3f73",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "1af52323d6e83ffcf617abf4130ee72fe992b619e5c398a6ad95d65d0438a421"
+    },
+    "model-v2/blender/stills-assembly/t_077.0.png": {
+      "before_sha256": "928d348f093b9efd422f07ecd42d12795d10e17617bff40380612333cc2468cd",
+      "after_sha256": "c6201de817a2f33a434d984088d53bb8b202e70483b33a4b8f8fcb4e89daedb3",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "aef1a1e4ba3bc600898a9362bd8b46a70927eb31082a5baf8d973d1b10902f65"
+    },
+    "model-v2/blender/stills-assembly/t_060.5.png": {
+      "before_sha256": "c3d2e3c54bd44eec33c877239cb0a2b4aa5b1b79cafb92bf75ad91ba1365d5b4",
+      "after_sha256": "e27db4c23b9a52870b1d6f06d1d7f69be490f78667b2f6bfa533e26a9abbc4ce",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "e48d70231c664c1629501d08aec86e47a11d4be59975069478cfeb288546a380"
+    },
+    "model-v2/blender/stills-assembly/t_000.0.png": {
+      "before_sha256": "bc0efe264409b4fabda85625917169a551f9830b50a5844598a7d9ccd8d90266",
+      "after_sha256": "cf405eedabab101f2f8c4a8da0c6367259f20cd24819b11ec5214975bbcffd92",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "7ed74c70edfb5134574d991dbd3e93928ccbd2b493d674e55aff3bf4f6ec94da"
+    },
+    "model-v2/blender/stills-assembly/t_045.0.png": {
+      "before_sha256": "60721b20890fc56e9ea7c6b9beca9dc5ebcf5908197335734ef8e167f662c6a1",
+      "after_sha256": "9065c04ada8904f2708ab8e988941b247d32ad11e460709db1c5ab71941fd8a3",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "f3c2cf6fabd4cb1906935833d3be25a1c0839fd3f7be56a058c0a381a580a05c"
+    },
+    "model-v2/blender/stills-assembly/t_085.0.png": {
+      "before_sha256": "bc7226637997ebed9b97c44c5c69cdb1a6f570ed765c22182e87433dc1c632fd",
+      "after_sha256": "09d9f65825f28b9611cca0735331906f6c3bb6661baded02916edb4dbf3bdf0f",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "8a95e7ab0553e6f3f92853c4e55cf38644eb473a4af8ef25f239f3ea74c1967d"
+    },
+    "model-v2/blender/stills-assembly/t_039.5.png": {
+      "before_sha256": "fbff9e400bda0dbfbb23be73e47b21dba38811ba632abf2c67d40fbd51059448",
+      "after_sha256": "4165026c3efb8713b44f4e60e4c8bac25273cdd0870e40fe2ecae701d33a0bcf",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "acdcf09c4b1f6cade868975102d28fe969ff58fc88ab6333a148a3c6e3c94cc4"
+    },
+    "model-v2/blender/stills-assembly/t_065.0.png": {
+      "before_sha256": "ac8b235eae364c30d0f7d09fc554c2fe325d2d38ab7d7e59f41f76c4b4286045",
+      "after_sha256": "7f36010375cecee676ef23d3c2a4cf6f6d63bd6c45795dc9189e5efe528e61e7",
+      "removed_text_chunks": 7,
+      "nontext_chunks_identical": true,
+      "idat_identical": true,
+      "decoded_pixels_identical": true,
+      "decoded_rgba_sha256": "a1bcdb08632631de3e491ab60adf096ad7b7edc11c3bcc2892a9a9c27086c8d0"
+    }
+  }
+}

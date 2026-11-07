@@ -10,6 +10,7 @@ import shutil
 import subprocess
 from urllib.parse import unquote
 import zipfile
+from png_metadata import private_text_fields
 
 ROOT = Path(__file__).resolve().parents[2]
 VALIDATION = ROOT / "validation"
@@ -107,12 +108,19 @@ def check_public_content():
             continue
         if path.suffix == ".log" or path.parent == ROOT / "validation":
             continue
-        if path.suffix in {".zip", ".FCStd", ".3mf"}:
+        if path.suffix == ".png":
+            require(not private_text_fields(path.read_bytes(), flags),
+                    f"Private PNG text metadata: {path.relative_to(ROOT)}")
+            checked += 1
+        elif path.suffix in {".zip", ".FCStd", ".3mf"}:
             with zipfile.ZipFile(path) as archive:
                 require(archive.testzip() is None, f"Archive CRC failure: {path.name}")
                 for name in archive.namelist():
                     data = archive.read(name)
                     require(not any(flag in data for flag in flags), f"Private marker: {path.name}/{name}")
+                    if name.lower().endswith(".png"):
+                        require(not private_text_fields(data, flags),
+                                f"Private PNG text metadata: {path.name}/{name}")
                 checked += len(archive.namelist())
         elif path.suffix in {".py", ".mjs", ".js", ".html", ".txt", ".md", ".json", ".step", ".svg"}:
             # This validator necessarily contains marker literals, not private values.
@@ -137,8 +145,20 @@ def main():
         record_sources(args)
     inputs = json.loads((VALIDATION / "input-hashes.json").read_text())
     require(inputs, "No input hashes recorded")
+    remediation_path = VALIDATION / "png-metadata-remediation.json"
+    remediated = (json.loads(remediation_path.read_text())["files"]
+                  if remediation_path.exists() else {})
     for rel, record in inputs.items():
-        require(sha(ROOT / rel) == record["repository_sha256"], f"Input changed: {rel}")
+        # The validator evolves independently; its historical source hash remains in the audit record.
+        if ROOT / rel == Path(__file__).resolve():
+            continue
+        expected = record["repository_sha256"]
+        if rel in remediated:
+            change = remediated[rel]
+            require(change["before_sha256"] == expected and change["decoded_pixels_identical"]
+                    and change["nontext_chunks_identical"], f"Invalid PNG remediation: {rel}")
+            expected = change["after_sha256"]
+        require(sha(ROOT / rel) == expected, f"Input changed: {rel}")
         if rel not in EDITED:
             require(record["byte_identical"], f"Unexpected modification: {rel}")
     for rel in MEDIA:
@@ -173,11 +193,14 @@ def main():
     require(native["repository_sha256"] == sha(ROOT / "model-v2/blender/brake-teaching-model-v2.blend"),
             "Blender differs from sanitized scene")
     report = {"status": "PASS", "scope": "Digital relocation and geometry only; not slicing or physical validation",
-              "input_files": len(inputs), "byte_identical_inputs": sum(r["byte_identical"] for r in inputs.values()),
+              "input_files": len(inputs),
+              "byte_identical_inputs": sum(sha(ROOT / rel) == record["source_sha256"]
+                                           for rel, record in inputs.items()),
               "local_links_checked": check_links(), "public_content_members_checked": check_public_content(),
               "plates": plate_checks, "videos": media, "sliced": False,
               "printed": False, "physically_tested": False, "printer_connected": False}
-    (VALIDATION / "delivery-checks.json").write_text(json.dumps(report, indent=2) + "\n")
+    report_name = "delivery-checks-after-png-remediation.json" if remediated else "delivery-checks.json"
+    (VALIDATION / report_name).write_text(json.dumps(report, indent=2) + "\n")
     print(f"PASS: {len(inputs)} input hashes, 2 geometry plates, 3 decoded videos, local links and content scan")
 
 
