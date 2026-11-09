@@ -2,6 +2,12 @@
 
 **磁力のない、手動プラスチック模型です。** 電磁ブレーキの円盤・ハブ・板ばねの関係を学ぶためのCAD、3Dビューア、動画、印刷準備データを収めています。電磁石として作動する実機や高速ロータ用部品ではありません。モーター駆動・通電には使わないでください。
 
+## Webで見る・別PCで取得する
+
+**[GitHub Pagesの入口を開く](https://ktanino10.github.io/electromagnetic-brake-lab/)** — 3D模型の操作、動画3本、組立ガイド、穴図、印刷用ZIP／3MFへの入口です。サインインやアプリのインストールなしで閲覧できます。
+
+別PCで印刷する場合もPagesの「印刷ファイルを取得」から、印刷用ZIPをダウンロード・展開し、`START-HERE.txt` を読んでBambu Studioで片方の3MFを開けます。GitHubから直接取得する手順は次節をご覧ください。Pagesの有効化直後は配信の反映に時間がかかる場合があります。
+
 ## 印刷ファイルの場所
 
 印刷だけなら**約1.1MBの印刷用ZIP**を取得・展開し、片方の3MFをBambu Studioで開いてください。印刷用STLはリポジトリ内では1か所に保存し、単独取得用ZIPにも同じ6種を収めています。
@@ -47,7 +53,7 @@ gh repo clone ktanino10/electromagnetic-brake-lab
 
 ## 模型を見る・組み立て方を調べる
 
-全体をダウンロードして展開し、[model-v2/brake-viewer-v2.html](model-v2/brake-viewer-v2.html) をChromeやEdgeなどWebGL対応ブラウザーで開いてください。外部通信なしで回転・拡大、分解、断面、単独部品、円盤の押下、組立12段階と時間スライダーを操作できます。
+[Web版3Dビューア](https://ktanino10.github.io/electromagnetic-brake-lab/model-v2/brake-viewer-v2.html)をChromeやEdgeなどWebGL対応ブラウザーで開けます。オフラインでは全体ZIPを展開し、[model-v2/brake-viewer-v2.html](model-v2/brake-viewer-v2.html) を開いてください。ローカル版は外部通信なしで回転・拡大、分解、断面、単独部品、円盤の押下、組立12段階と時間スライダーを操作できます。
 
 | 入口 | 内容 |
 |---|---|
@@ -62,7 +68,7 @@ gh repo clone ktanino10/electromagnetic-brake-lab
 
 ## 動画3本
 
-ローカルで [videos/watch.html](videos/watch.html) を開くと、3本を**初期ミュート・音量0**で再生できます。MP4の直接再生では外部プレーヤーの音量設定が適用されます。
+[Web版の動画一覧](https://ktanino10.github.io/electromagnetic-brake-lab/videos/watch.html)、またはローカルで [videos/watch.html](videos/watch.html) を開くと、3本を**初期ミュート・音量0**で再生できます。MP4の直接再生では外部プレーヤーの音量設定が適用されます。
 
 | 実ファイル | 長さ | 内容 |
 |---|---|---|
@@ -111,8 +117,9 @@ npm ci
 npm run build
 npm test
 npm run test:media
+node test-pages.mjs
 ```
 
 Chromeを標準位置で検出できない場合は `CHROME_PATH` を指定するか、`npx playwright install chromium` で専用ブラウザーを用意します。CAD再生成はFreeCADのPython環境で `model-v2/scripts/build_v2_cad.py`、CG再生成はBlenderで `model-v2/scripts/build_v2_blender.py` を実行します。日本語CGの再生成には、利用可能な手元の日本語フォントを環境変数 `BRAKE_JAPANESE_FONT` で指定します。フォントファイルは配布しません。Blenderの保存済みシーンも別OSでは手元のフォントへの置換が必要です。
 
-[validation/](validation/) に移設の入力SHA、配置・メッシュ・動画・リンク・ブラウザー確認を保存しています。デジタル確認は印刷成功や物理安全の認証ではありません。**未印刷・未購入・物理未検証・実スライス未確認**です。プリンターへの接続／送信／印刷開始、実機操作、Pages公開は行っていません。
+[validation/](validation/) に移設の入力SHA、配置・メッシュ・動画・リンク・ブラウザー確認を保存しています。Pages向けの入口はルートの `index.html`、Jekyllを使わない配信用マーカーは `.nojekyll` です。`test-pages.mjs` はローカルのプロジェクトパス配下でリンク・ダウンロード・代表操作を確認します。デジタル確認は印刷成功や物理安全の認証ではありません。**未印刷・未購入・物理未検証・実スライス未確認**です。プリンターへの接続／送信／印刷開始、実機操作は行っていません。

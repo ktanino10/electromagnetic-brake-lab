@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="電磁ブレーキのしくみを学ぶ手動模型。3Dビューア、組立動画、P1S向け印刷ファイルの入口。">
+<link rel="icon" href="data:,">
+<title>電磁ブレーキ学習模型 v2</title>
+<style>
+:root{color-scheme:light;--ink:#172a3a;--paper:#edf3f7;--line:#c5d4df;--blue:#216ac4;--teal:#087f71;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 "Hiragino Sans","Yu Gothic",sans-serif}
+a{color:#195b9e;text-underline-offset:4px}a:hover{color:var(--teal)}a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+header,main,footer{max-width:1180px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.label{font:12px/1.6 Menlo,Consolas,monospace;letter-spacing:1.5px;color:var(--teal)}header a{font-size:14px}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:36px;padding:24px 0 42px}h1{font:700 clamp(28px,4vw,48px)/1.4 "Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;margin:12px 0 20px}
+h2{font-size:24px;line-height:1.5;margin:0 0 12px}h3{font-size:18px;margin:0 0 8px}p{margin:0 0 16px}.hero figure{margin:0}.hero img{display:block;width:100%;height:auto;border-radius:8px}.hero figcaption{font-size:12px;margin-top:8px;color:#4d6273}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-block;padding:11px 18px;border:1px solid var(--line);border-radius:8px;background:var(--white);text-decoration:none;font-weight:600}.button.primary{background:var(--blue);border-color:var(--blue);color:var(--white)}.button:hover{border-color:var(--teal)}
+.notice{border-left:3px solid var(--teal);padding:14px 18px;background:var(--white)}section{padding:32px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{padding:22px;border:1px solid var(--line);border-radius:8px;background:var(--white)}.panel p:last-child{margin-bottom:0}
+.files{list-style:none;padding:0;margin:20px 0}.files li{padding:14px 0;border-top:1px solid var(--line)}.files small{display:block;color:#4d6273}details{margin-top:20px}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}.gallery img{width:100%;height:auto;display:block;border-radius:4px}.gallery a{font-size:13px}.fine{font-size:13px;color:#4d6273}footer{border-top:1px solid var(--line);font-size:13px}
+@media(max-width:720px){header,main,footer{padding:18px}.hero{grid-template-columns:1fr;gap:20px;padding-top:12px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%;text-align:center}.actions{width:100%}header{align-items:flex-start}.label{letter-spacing:.5px}}
+</style>
+</head>
+<body>
+<header><span class="label">BRAKE ASSEMBLY / TEACHING MODEL v2</span><a href="https://github.com/ktanino10/electromagnetic-brake-lab">GitHubで資料を見る</a></header>
+<main>
+<div class="hero">
+<div><div class="label">円盤・ハブ・板ばねを観察する</div><h1>電磁ブレーキを、<br>手で動かして学ぶ。</h1>
+<p>ねじで組み立てる、磁力のないプラスチック模型です。3Dで内部を観察し、動画で組立順を確認して、印刷ファイルを取得できます。</p>
+<div class="actions"><a class="button primary" href="model-v2/brake-viewer-v2.html">3D模型を動かす</a><a class="button" href="#print">印刷ファイルを取得</a></div>
+</div>
+<figure><a href="model-v2/brake-viewer-v2.html" aria-label="部品とねじ穴の図から3D模型を開く"><img src="model-v2/blender/stills-holes/H1_parts_top.png" width="1920" height="1080" alt="台座、リング、ハブ、円盤、板ばね、キャップと、それぞれのねじ穴"></a><figcaption>現行v2の部品とねじ穴。色は部品の役割を見分けるための例です。</figcaption></figure>
+</div>
+<p class="notice"><strong>作動する電磁ブレーキではありません。</strong> モーター駆動・通電・高速ロータ用には使わないでください。CGは指定した動きの可視化で、物理シミュレーションではありません。未印刷・現物未検証です。</p>
+<section aria-labelledby="watch">
+<h2 id="watch">動きと組立を確認する</h2>
+<div class="grid">
+<div class="panel"><h3>自由に回せる3Dビューア</h3><p>回転・拡大、分解、断面表示、部品の単独表示、円盤の押下を操作できます。組立手順は途中で止めて確認できます。</p><a href="model-v2/brake-viewer-v2.html">3Dビューアを開く</a></div>
+<div class="panel"><h3>3本の説明・組立動画</h3><p>現行v2のねじ組立88秒、しくみの背景説明92秒、4方向からの観察40秒。プレーヤーの初期状態はミュート・音量0です。</p><a href="videos/watch.html">動画3本を見る</a></div>
+</div>
+</section>
+<section aria-labelledby="print">
+<h2 id="print">別PCで印刷するためのファイル</h2>
+<p>まず印刷用ZIPをダウンロード・展開し、<code>START-HERE.txt</code> を読んでから、片方の3MFをBambu Studioで開いてください。サインインは不要です。</p>
+<a class="button primary" href="print-prep/p1s-brake-print-prep.zip" download>印刷用ZIPをダウンロード（約1.1MB）</a>
+<ul class="files">
+<li><a href="print-prep/01-body-PLA-candidate.3mf" download>本体の配置3MF</a><small>台座・コイル役リング・ハブ・円盤・キャップを各1個、合計5部品。本体PLAが候補。</small></li>
+<li><a href="print-prep/02-springs-PETG-candidate.3mf" download>板ばねの配置3MF</a><small>4枚（使用3枚＋予備1枚）。板ばねPETGを推奨。</small></li>
+<li><a href="print-prep/START-HERE.txt">P1Sの印刷準備手順</a><small>設定候補、スライス時の確認点、最初のハブ1個・板ばね1枚の試作。</small></li>
+</ul>
+<p class="notice"><strong>3MFは形状と配置のみ・未スライスです。</strong> プリンター／材料／工程設定、G-codeは入っていません。標準0.4mmノズル想定で、手元のノズル径・材料・プレートは未確認です。実際のプリセットを選択し、小穴・ブリッジ・板ばねの層をスライスプレビューで確認してください。</p>
+<p class="fine">STL6種も印刷用ZIPに含まれます。板ばねSTLは1枚の形状なので、STLから準備する場合は4個複製してください。穴の嵌合、たわみ、回転、戻り、耐久性は現物での確認が必要です。</p>
+</section>
+<section aria-labelledby="assembly">
+<h2 id="assembly">組立手順と穴の図</h2>
+<p><a href="model-v2/GUIDE.txt">詳しい組立ガイド・ねじBOM・名目寸法を読む</a></p>
+<details><summary>部品・裏のナット穴・締結の断面を見る（5枚）</summary>
+<div class="gallery">
+<a href="model-v2/blender/stills-holes/H1_parts_top.png"><img loading="lazy" src="model-v2/blender/stills-holes/H1_parts_top.png" alt="6種の部品と通し穴">部品と通し穴</a>
+<a href="model-v2/blender/stills-holes/H2_underside_nut_pockets.png"><img loading="lazy" src="model-v2/blender/stills-holes/H2_underside_nut_pockets.png" alt="ハブと円盤の裏側の六角ナット穴">裏のナット穴</a>
+<a href="model-v2/blender/stills-holes/H3_section_spring_screw.png"><img loading="lazy" src="model-v2/blender/stills-holes/H3_section_spring_screw.png" alt="板ばねを固定するM3ねじの断面">板ばねの固定部</a>
+<a href="model-v2/blender/stills-holes/H4_section_center_post.png"><img loading="lazy" src="model-v2/blender/stills-holes/H4_section_center_post.png" alt="中心の柱と軸ボルトの断面">中心軸の断面</a>
+<a href="model-v2/blender/stills-holes/H5_exploded_axes.png"><img loading="lazy" src="model-v2/blender/stills-holes/H5_exploded_axes.png" alt="ねじの通り道を示す分解図">分解図</a>
+</div></details>
+<p style="margin-top:24px">オフラインでも使いたい場合は、<a href="https://github.com/ktanino10/electromagnetic-brake-lab/archive/refs/heads/main.zip">リポジトリ全体のZIP</a>を展開してください。CAD・STLの個別ファイルと詳細は<a href="https://github.com/ktanino10/electromagnetic-brake-lab#readme">GitHubのREADME</a>にあります。</p>
+</section>
+</main>
+<footer>電磁ブレーキ学習模型 v2 — デジタル設計案です。印刷成功・物理安全の認証ではありません。</footer>
+</body>
+</html>

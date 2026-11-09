@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "scope": "Local project-path HTTP browser checks; not production Pages deployment",
+  "projectPath": "/electromagnetic-brake-lab/",
+  "checks": [
+    "Japanese landing heading",
+    "Project-path resource: model-v2/brake-viewer-v2.html",
+    "Project-path resource: ",
+    "Project-path resource: model-v2/blender/stills-holes/H1_parts_top.png",
+    "Project-path resource: videos/watch.html",
+    "Project-path resource: print-prep/p1s-brake-print-prep.zip",
+    "Project-path resource: print-prep/01-body-PLA-candidate.3mf",
+    "Project-path resource: print-prep/02-springs-PETG-candidate.3mf",
+    "Project-path resource: print-prep/START-HERE.txt",
+    "Project-path resource: model-v2/GUIDE.txt",
+    "Project-path resource: model-v2/blender/stills-holes/H2_underside_nut_pockets.png",
+    "Project-path resource: model-v2/blender/stills-holes/H3_section_spring_screw.png",
+    "Project-path resource: model-v2/blender/stills-holes/H4_section_center_post.png",
+    "Project-path resource: model-v2/blender/stills-holes/H5_exploded_axes.png",
+    "All internal links remain under project prefix",
+    "Downloaded bytes match: print-prep/p1s-brake-print-prep.zip",
+    "Downloaded bytes match: print-prep/01-body-PLA-candidate.3mf",
+    "Downloaded bytes match: print-prep/02-springs-PETG-candidate.3mf",
+    "Landing hero and five diagrams load",
+    "Mobile landing has no horizontal overflow",
+    "Viewer starts under project prefix",
+    "Viewer section operation",
+    "Viewer press operation",
+    "Viewer explode operation",
+    "Mobile viewer has no horizontal overflow",
+    "Three videos loaded muted with volume zero",
+    "Video 1 plays over project-path HTTP",
+    "Video 2 plays over project-path HTTP",
+    "Video 3 plays over project-path HTTP",
+    "Mobile video page has no horizontal overflow",
+    "No browser console warnings/errors or server errors"
+  ],
+  "videos": [
+    {
+      "file": "../model-v2/brake-assembly-v2.mp4",
+      "duration": 88,
+      "muted": true,
+      "volume": 0,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "./pico-brake-mechanism-explainer.mp4",
+      "duration": 92,
+      "muted": true,
+      "volume": 0,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "./pico-brake-four-angles.mp4",
+      "duration": 40,
+      "muted": true,
+      "volume": 0,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "errors": [],
+  "serverErrors": [],
+  "screenshots": [
+    "model-v2/results/viewer-pages-desktop.png",
+    "model-v2/results/viewer-pages-mobile.png"
+  ]
+}

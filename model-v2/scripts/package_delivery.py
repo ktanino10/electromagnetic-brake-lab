@@ -79,7 +79,7 @@ class Links(HTMLParser):
 
 def check_links():
     checks = 0
-    for path in (ROOT / "README.md", ROOT / "videos/watch.html",
+    for path in (ROOT / "README.md", ROOT / "index.html", ROOT / "videos/watch.html",
                  ROOT / "model-v2/brake-viewer-v2.html", ROOT / "model-v2/watch-assembly.html",
                  ROOT / "model-v2/web/viewer.html"):
         if path.suffix == ".md":
@@ -90,6 +90,9 @@ def check_links():
             urls = parser.urls
         for url in urls:
             if url.startswith(("data:", "#")):
+                continue
+            if url.startswith(("https://github.com/ktanino10/electromagnetic-brake-lab",
+                               "https://ktanino10.github.io/electromagnetic-brake-lab/")):
                 continue
             require("://" not in url, f"Unexpected external HTML link: {path.name}")
             target = (path.parent / unquote(url.split("#")[0])).resolve()
